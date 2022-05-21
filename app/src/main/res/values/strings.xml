@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">movieClient</string>
+    <string name="title_activity_movie_library">movieLibrary</string>
+    <string name="movie_titles_placeholder">movie Titlemovie Titlemovie Title</string>
+    <string name="artist_name_placeholder">Artist</string>
+    <string name="movie_cover_img_desc">movie Cover</string>
+
+        <string-array name="movieTitles">
+            <item>None</item>
+            <item>movie 1</item>
+            <item>movie 2</item>
+            <item>movie 3</item>
+            <item>movie 4</item>
+            <item>movie 5</item>
+        </string-array>
+
+</resources>

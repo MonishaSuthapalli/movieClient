@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E6A5DD"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/black"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hello World!"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="25"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/bind"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:onClick="bindButtonOnClick"
+            android:text="Bind Service!" />
+
+
+        <Button
+            android:id="@+id/unbind"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:onClick="unbindButtonOnClick"
+            android:text="Unbind Service!" />
+
+        <Button
+            android:id="@+id/show_movie"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:onClick="showmovieOnClick"
+            android:text="movie Library!"
+            android:background="@android:color/white"/>
+
+        <TextView
+            android:id="@+id/nowPlaying"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="20dp"
+            android:text="movie.."
+            android:textSize="18sp" />
+
+        <Spinner
+            android:id="@+id/planets_spinner"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:contentDescription="movie List" />
+
+        <TextView
+            android:id="@+id/myAwesomeTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:text="Movie Details here"
+            android:textSize="20sp" />
+
+        <ListView
+            android:id="@+id/listview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            />
+
+    </LinearLayout>
+</LinearLayout>
